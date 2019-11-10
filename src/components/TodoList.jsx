@@ -1,7 +1,7 @@
 import React, { useCallback, useState } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { TOGGLE_CHECK, REMOVE } from "../modules/todos";
-import { insert } from "../modules/todos";
+import { TOGGLE_CHECK, REMOVE } from "../modules/reducers/todos";
+import { insert } from "../modules/reducers/todos";
 
 const TodoItem = ({ todo }) => {
   const { id, title, done } = todo;
